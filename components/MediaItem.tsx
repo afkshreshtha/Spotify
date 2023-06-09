@@ -48,10 +48,11 @@ const MediaItem: React.FC<MediaItemProps> = ({
           min-w-[48px] 
           overflow-hidden
         "
+        
       >
         <Image
           fill
-          src={imageUrl || "/images/music-placeholder.png"}
+          src={imageUrl || "/images/liked.png"}
           alt="MediaItem"
           className="object-cover"
         />

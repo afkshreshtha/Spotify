@@ -20,7 +20,7 @@ const SongItem: React.FC<SongItemProps> = ({ data, onClick }) => {
     "
     >
       <div className="relative aspect-square w-full h-full rounded-md overflow-hidden">
-        <Image className="object-cover" src={imagePath} fill alt="Image" />
+        <Image className="object-cover" src={imagePath || "/images/liked.png"} fill alt="Image" />
       </div>
       <div className="flex flex-col items-start w-full t-4 gap-y-1">
         <p className="font-semibold truncate w-full">{data.title}</p>
